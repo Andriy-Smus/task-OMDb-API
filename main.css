@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+form[name="f1"]{
+    width: 80%;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+input[type="text"]{
+    width: 49%;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    padding-left: 12px;
+    font-size: 17px;
+}
+.uil-times{
+    position: absolute;
+    left: 46%;
+    top: 7px;
+    color: rgb(0, 141, 206);
+    font-size: 20px;
+    cursor: pointer;
+}
+input[type="text"]:focus{
+    outline: none;
+    border-color: rgb(0, 194, 184);
+    box-shadow: 0 0 2px 2px rgb(12, 222, 250);
+}
+input[type="button"]{
+    width: 48%;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(0, 194, 0);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+input[type="button"]:hover{
+    background-color: rgb(0, 160, 0);
+}
+input[type="button"]:focus{
+    box-shadow: 0 0 0 3px rgba(13, 218, 13, 0.425);
+}
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blocks{
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    width: 22%;
+    margin-left: 4%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.block:nth-child(4n+1){
+    margin-left: 0%;
+}
+.block img{
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0 0 8px 3px rgb(116, 116, 116);
+}
+.heading{
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    background-color: rgb(197, 197, 197);
+    margin-top: -5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.style{
+    margin: 10px auto 0;
+    text-align: center;
+    color: rgb(116, 116, 116);
+}
+.year{
+    margin: 10px auto 0;
+    text-align: center;
+}
+.bt-more{
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+    border: none;
+    background-color: rgba(16, 153, 34, 0.938);
+    color: rgb(238, 238, 238);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bt-more:hover{
+    background-color: rgba(13, 121, 27, 0.938);
+}
+.bt-more:focus{
+    box-shadow: 0 0 0 3px rgba(13, 218, 13, 0.425);
+}
+
+.result-bt-more{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vmax;
+    background-color: rgba(77, 77, 77, 0.527);
+    z-index: 2;    
+}
+.box-result{
+    width: 80%;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    margin: 30px auto;
+    border-radius: 4px;
+    padding: 15px 15px 15px 25px;
+}
+.box-res{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    padding: 10px;
+    display: flex;
+}
+.box-res img{
+    height: 100%;
+    margin-right: 10px;
+}
+
+.movie-title{
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.movie-misc-info{
+    margin: 15px auto 0;
+    color: rgb(116, 116, 116);
+}
+.plot, .writer, .director, .actors, .boxOffice, .awards, .ratings{
+    margin-top: 20px;
+}
+
+.hide{
+    display: none;
+}
+
